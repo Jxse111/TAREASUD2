@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7</title>
+</head>
+<body>
+    <script>
+        var nombre //Variable de texto
+        entrada = prompt("Introduzca su nombre","Nada");
+        nombre = entrada;
+
+        //Si el nombre termina en o detecta que es un hombre con lo cual devuelve el siguiente saludo.
+        if(nombre.endsWith("o")){
+            document.write("Saludos Don "+ nombre +".<br/>");
+        //Si el nombre termina en a detecta que es una mujer con lo cual devuelve el siguiente saludo.
+        }else if(nombre.endsWith("a")){
+            document.write("Saludos Doña "+ nombre +".<br/>");
+            //Y si no termina con o u con a , devuelve este otro mensaje.
+        }else{
+            document.write("Saludos " + nombre + ".<br/>");
+        }
+
+    </script>
+</body>
+</html>

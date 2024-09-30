@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+</head>
+<body>
+    <script>
+        entrada = prompt("Introduce un número","Nada");
+        var valorEntrada = entrada;
+
+        //Si es un número mostrara lo contenido en el bloque de ejecución.
+        if(valorEntrada >= 0 || valorEntrada <= 0){
+            document.write("Lo introducido es un número, es el número "+valorEntrada+".<br/>");
+        }
+        else{//Si no es un número mostrara lo contenido en el bloque de ejecución.
+            document.write("Lo introducido no es un número, has introducido: "+valorEntrada+".<br/>");
+        }
+        //Y si es un número,comprobamos que sea par.
+        if(valorEntrada % 2 == 0){
+            document.write("Además el número introducido es par."+"<br/>");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10</title>
+</head>
+<body>
+    <script>
+        primerNumeroTeclado = parseInt(prompt("Introduce el primer numero: ","0"));
+        segundoNumeroTeclado = parseInt(prompt("Introduce el segundo numero: ","0"));
+        operacionTeclado = prompt("¿Que operación desea realizar?","Nada");
+
+        var primerNum = 0,segundoNum = 0,resultadoSuma = 0,resultadoResta = 0,resultadoMultiplicacion = 0,resultadoDivision = 0//Variables de numeros entero.
+        var operacion//Variables de texto.
+
+        primerNum = primerNumeroTeclado;
+        segundoNum = segundoNumeroTeclado;
+        operacion = operacionTeclado;
+
+        //Creamos la calculadora para que realice operaciones.
+        if(operacion == "Suma"){
+            resultadoSuma = primerNum + segundoNum;
+            alert("El resultado de la suma es: "+resultadoSuma+".");
+        }else if(operacion == "Resta"){
+            resultadoResta = primerNum - segundoNum;
+            alert("El resultado de la resta es: "+resultadoResta+".");
+        }else if(operacion == "Multiplicacion"){
+            resultadoMultiplicacion = primerNum * segundoNum;
+            alert("El resultado de la multiplicación es: "+resultadoMultiplicacion+".");
+        }else {
+            resultadoDivision = primerNum / segundoNum;
+            alert("El resultado de la división es: "+resultadoDivision+".");
+        }
+
+    </script>
+</body>
+</html>

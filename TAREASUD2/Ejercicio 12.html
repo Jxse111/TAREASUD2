@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 12</title>
+</head>
+<body>
+    <script>
+        var n,num,media,max,min,contador,sumaTotalNum;
+        max = 0;
+        min = 9;
+        num = 0;
+        contador = 0;
+        sumaTotalNum = 0;
+        pregunta = parseInt(prompt("Introduce una cantidad total para los números que queremos usar","0"));
+        n = pregunta;
+        //Bucle que funcionara siempre que no lleguemos al ultimo número
+        while(contador != n){
+            pregunta2 = parseInt(prompt("Introduce un número","0"));
+            num = pregunta2;
+            contador++;
+            //Cada número introducido sera sumado y almacenado en esta variable para posteriormente calcular la media.
+            sumaTotalNum += pregunta2;
+            //Calculamos el numero máximo y el mínimo.
+            if(num > max){
+                max = num;
+            }else{
+                min = num;
+            }
+        }
+        //Realizamos la media
+        media = parseFloat(sumaTotalNum/n);
+        //Devolvemos por pantalla el maximo, el minimo y la media.
+        alert("El número mayor del conjunto es: "+max+".");
+        alert("El número menor del conjunto es: "+min+".");
+        alert("La media de los números introducidos es: "+media+".");
+
+    </script>
+</body>
+</html>

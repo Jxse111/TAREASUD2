@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 11</title>
+</head>
+<body>
+    <script>
+        entradaNombre = prompt("Introduce el nombre del alumno","Nada");
+        entradaNota = prompt("Introduce la nota del alumno.");
+
+        var nombre = entradaNombre;//Variables de tipo texto
+        var nota = entradaNota;//Variables de tipo entero
+        
+        //Con diferentes condiciones verificamos si esta aprobado o no y con que calificación.
+        if(nota >= 5 && nota <= 5.99){
+            alert("EL alumno "+nombre+" ha aprobado con un suficiente, el módulo con una nota de: "+nota+".");
+        }else if(nota >= 6 && nota <= 6.99){
+            alert("EL alumno "+nombre+" ha aprobado con un bien, el módulo con una nota de: "+nota+".");
+        }else if(nota >= 7 && nota <= 8.49){
+            alert("EL alumno "+nombre+" ha aprobado con un notable, el módulo con una nota de: "+nota+".");
+        }else if(nota>= 8.5 && nota <= 10){
+            alert("EL alumno "+nombre+" ha aprobado con un sobresaliente, el módulo con una nota de: "+nota+".");
+        }else{
+            alert("EL alumno "+nombre+" ha suspendido, el módulo con una nota de: "+nota+".");
+        }
+    </script>
+</body>
+</html>

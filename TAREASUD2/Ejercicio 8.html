@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 8</title>
+</head>
+<body>
+    <script>
+        //Creamos el cuadro de pregunta 
+        peticion = prompt("Introduzca una palabra para invertirla","Nada");
+        var palabra, palabraInvertida //Variables de texto
+        palabra = peticion; //EL valor de la variable palabra sera lo que introduzcamos por teclado.
+        palabraInvertida = "";//Inicializamos la variable para guardar la palabra invertida
+        //Invertimos la palabra con un bucle for
+        for(var i = palabra.length -1 ; i >= 0 ; i--){
+            palabraInvertida += palabra[i];
+        }
+        //Imprimimos la palabra invertida
+        document.write(palabraInvertida);
+    </script>
+</body>
+</html>

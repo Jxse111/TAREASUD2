@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+</head>
+<body>
+    <script>
+        /*Creamos una entrada para ingresar el mesa, la cual todo lo que reciba 
+        lo cambiara a minusculas con lo cual no hay problema si se introduce un dato en mayúscula*/
+        mes = prompt("Ingresa el nombre del mes (ejemplo: enero, febrero, etc.):").toLowerCase();
+
+        //Creamos la condicion para que nos muestre los meses que tienen 31 dias.
+        if (mes === "enero" || mes === "marzo" || mes === "mayo" || mes === "julio" || mes === "agosto" || mes === "octubre" || mes === "diciembre") {
+            alert("Este mes tiene 31 días.");
+        //Creamos la otra condicion en caso de que sean meses con 30 dias.
+         }else if (mes === "abril" || mes === "junio" || mes === "septiembre" || mes === "noviembre") {
+            alert("Este mes tiene 30 días.");
+         // Y finalmente lo mismo para el mes de febrero que tiene 28 dias.
+         }else if (mes === "febrero") {
+            alert("Este mes tiene 28 días.");
+        }
+        // Si no se introduce ninguno de los meses mencionados, salta dicha alerta.
+        else  {
+            alert("Mes no válido. Por favor ingresa un nombre de mes correcto.");
+        }
+    </script>
+    
+</body>
+</html>

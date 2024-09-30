@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6</title>
+</head>
+<body>
+    <script>
+        var nombre, sexo //variables de texto.
+        var edad // Variables de número enteros.
+        var carnet = document.createElement('img');
+        pregunta1 = prompt("¿Cuáles tu nombre?","Nada");
+        pregunta2 = prompt("¿Cuáles tu edad?","Nada");
+        pregunta3 = prompt("¿Cuáles tu sexo?","Nada");
+
+        nombre = pregunta1;
+        edad = pregunta2;
+        sexo = pregunta3;
+        carnet.src="./IMÁGENES/Certificado.png";
+
+        carnet.width = 90;  // Cambiamos el tamaño de la imagen.
+        carnet.height = 90;
+        //Si es mayor de edad, devolvemos el mensaje y la imagen del certificado.
+        if(edad >= 18){
+            document.write("Aqui tienes tu carnet para poder salir del centro: "+"<br/>");
+            document.write("Nombre: "+nombre+".<br/>");
+            document.write("Edad: "+edad+".<br/>");
+            document.write("Sexo: "+sexo+".<br/>");
+            document.body.appendChild(carnet);
+        } else {//Sino devolvemos el siguiente mensaje.
+            document.write("Lo siento, no tienes la edad suficiente para obtener un carnet.");
+        }
+    </script>
+</body>
+</html>

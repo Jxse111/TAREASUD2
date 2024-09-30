@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    <script>
+
+        entrada = prompt("Introduce un número","Nada"); // Entrada por teclado
+        var num // Variable para guardar el número introducido por teclado
+        do{
+            num = entrada;
+            document.write("EL número introducido es: "+entrada +".<br/>");
+
+            if(num != -1){//Si el numero introducido es distinto de -1 se repetirá el proceso.
+            entrada = prompt("Introduce un número","Nada");
+            }
+
+        }while(num!= -1);
+
+    </script>
+</body>
+</html>

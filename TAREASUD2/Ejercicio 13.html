@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 13</title>
+</head>
+<body>
+    <script>
+        
+        pregunta= parseInt(prompt("Introduce el número de primeros números primos a calcular:", "0"));
+        // Creamos la variable que va a albergar la cantidad de numeros primos que queremos calcular 
+        var n = pregunta;
+        //Creamos otras variables
+         var numero = 2;
+        var encontrados = 0;
+
+        document.write("Primos con FOR:<br/>");
+        //Realizamos el bucle for
+        for (numero = 2; encontrados < n; numero++) {
+            var esPrimo = true;
+            for (var i = 2; i < numero; i++) {
+                if (numero % i == 0) {
+                    esPrimo = false;
+                }
+            }
+            if (esPrimo) {
+                document.write(numero + ",");
+                encontrados++;
+            }
+        }
+
+        //Otra manera con el bucle While
+        document.write("<br/>Primos con While:<br/>");
+        //Asignamos nuevamente a numero y encotramos sus valores anteriores para que no arrastren el valor del método anterior
+        numero = 2;
+        encontrados = 0;
+        while (encontrados < n) {
+            var esPrimo = true;
+            var i = 2;
+            while (i < numero) {
+                if (numero % i == 0) {
+                    esPrimo = false;
+                }
+                i++;
+            }
+            if (esPrimo) {
+                document.write(numero + ",");
+                encontrados++;
+            }
+            numero++;
+        }
+
+        // Y finalmente con el bucle Do...While
+        document.write("<br/>Primos con Do...While:<br/>");
+        //Asignamos nuevamente a numero y encotramos sus valores anteriores para que no arrastren el valor del método anterior
+        numero = 2;
+        encontrados = 0;
+        do {
+            var esPrimo = true;
+            var i = 2;
+            do {
+                if (numero % i == 0) {
+                    esPrimo = false;
+                }
+                i++;
+            } while (i < numero);
+            if (esPrimo) {
+                document.write(numero + ",");
+                encontrados++;
+            }
+            numero++;
+        } while (encontrados < n);
+
+    </script>
+</body>
+</html>
